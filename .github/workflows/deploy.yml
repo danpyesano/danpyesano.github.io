@@ -29,8 +29,10 @@ jobs:
         with:
           node-version: 24
 
-      - name: Compile Tailwind CSS
-        run: npx --yes @tailwindcss/cli@4.3.4 -i src/input.css -o assets/site.css --minify
+            - name: Compile Tailwind CSS
+        run: |
+          npm install --no-save --no-audit --no-fund tailwindcss@4.3.4 @tailwindcss/cli@4.3.4
+          npx @tailwindcss/cli -i src/input.css -o assets/site.css --minify
 
       - name: Collect the files that make up the website
         run: |
