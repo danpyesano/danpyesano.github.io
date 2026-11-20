@@ -1,6 +1,9 @@
 /* Tailwind entry file. GitHub compiles this to assets/site.css on every commit. */
 @import "tailwindcss";
 
+/* "short:" prefix = styles for short screens (laptops with browser toolbars), so the page fits without scrolling. */
+@custom-variant short (@media (max-height: 760px));
+
 /* Design tokens: change a colour or font here and it updates everywhere. */
 @theme {
   --font-sans: "Public Sans", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
