@@ -1,0 +1,15 @@
+/* Tailwind entry file. GitHub compiles this to assets/site.css on every commit. */
+@import "tailwindcss";
+
+/* Design tokens: change a colour or font here and it updates everywhere. */
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --color-ink: #0f172a;          /* headings, body text */
+  --color-muted: #475569;        /* secondary text */
+  --color-line: #e2e8f0;         /* dividers, borders */
+  --color-accent: #2c4f7c;       /* muted blue: buttons, links, labels */
+  --color-accent-dark: #213c60;  /* button hover */
+  --color-accent-soft: #e8eef6;  /* photo frame */
+}
