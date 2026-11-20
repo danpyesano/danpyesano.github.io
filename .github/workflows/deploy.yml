@@ -1,0 +1,55 @@
+# Builds the site and publishes it to GitHub Pages every time you commit to "main".
+# You don't need to edit this file.
+
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the site files
+        uses: actions/checkout@v7
+
+      - name: Set up Node (used only to run Tailwind)
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Compile Tailwind CSS
+        run: npx --yes @tailwindcss/cli@4.3.4 -i src/input.css -o assets/site.css --minify
+
+      - name: Collect the files that make up the website
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r assets _site/
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
