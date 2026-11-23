@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#2c4f7c"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">DP</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#2c4f7c"/><g fill="#fff"><path transform="translate(6.79 45.75) scale(0.01902 -0.01902)" d="M162 0V1446H343Q411 1446 479.5 1445.5Q548 1445 594 1444Q857 1438 1023.0 1350.0Q1189 1262 1266.5 1104.0Q1344 946 1344 730Q1344 505 1262.0 341.5Q1180 178 1011.5 89.0Q843 0 584 0ZM456 236H590Q714 236 815.5 284.0Q917 332 978.0 441.0Q1039 550 1039 732Q1039 901 985.0 1006.5Q931 1112 831.0 1161.0Q731 1210 594 1210H456Z"/><path transform="translate(30.41 45.75) scale(0.01902 -0.01902)" d="M162 0V1446H694Q852 1446 977.0 1391.5Q1102 1337 1174.5 1231.0Q1247 1125 1247 972Q1247 828 1183.0 726.0Q1119 624 1003.5 570.0Q888 516 732 516H456V0ZM453 742H724Q834 742 904.0 812.5Q974 883 974 987Q974 1095 900.0 1158.5Q826 1222 720 1222H453Z"/></g></svg>

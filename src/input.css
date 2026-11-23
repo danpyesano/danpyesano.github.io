@@ -3,6 +3,8 @@
 
 /* "short:" prefix = styles for short screens (laptops with browser toolbars), so the page fits without scrolling. */
 @custom-variant short (@media (max-height: 760px));
+/* "shorter:" = very short windows (small laptops), tightened further. */
+@custom-variant shorter (@media (max-height: 620px));
 
 /* Design tokens: change a colour or font here and it updates everywhere. */
 @theme {
