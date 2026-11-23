@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: 24
 
-            - name: Compile Tailwind CSS
+      - name: Compile Tailwind CSS
         run: |
           npm install --no-save --no-audit --no-fund tailwindcss@4.3.4 @tailwindcss/cli@4.3.4
           npx @tailwindcss/cli -i src/input.css -o assets/site.css --minify
@@ -37,7 +37,7 @@ jobs:
       - name: Collect the files that make up the website
         run: |
           mkdir _site
-          cp index.html _site/
+          cp index.html favicon.ico apple-touch-icon.png _site/
           cp -r assets _site/
 
       - name: Upload website
