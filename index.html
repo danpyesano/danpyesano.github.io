@@ -63,7 +63,7 @@
 <body class="bg-white font-sans text-ink antialiased">
   <!-- ===== Menu (no JavaScript: uses the built-in <details> element) =====
        To add a page: copy one <a> line below, in BOTH index.html and investigations.html. -->
-  <nav aria-label="Site" class="fixed top-4 right-4 z-30 sm:top-6 sm:right-6">
+  <nav aria-label="Site" class="fixed top-4 right-3 z-30 sm:top-6 sm:right-[max(1.75rem,calc((100vw-64rem)/2+1.75rem))]">
     <details class="group relative">
       <summary class="flex size-11 cursor-pointer list-none items-center justify-center rounded-lg bg-white text-ink transition-colors hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent [&::-webkit-details-marker]:hidden">
         <span class="sr-only">Menu</span>
@@ -85,7 +85,7 @@
       <!-- Text -->
       <div class="order-2 max-w-2xl md:order-1">
         <p class="font-mono text-xs uppercase tracking-[0.14em] text-accent">
-          PhD Researcher · Social Policy · Ulster University
+          PhD Researcher <span class="hidden sm:inline">· Social Policy </span>· Ulster University
         </p>
 
         <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl short:mt-3 short:sm:text-[2.75rem]">
@@ -99,15 +99,16 @@
           background as a journalist investigating environmental and state-corporate crime.
         </p>
 
-        <!-- Research interests: add, remove or reword the <li> lines -->
-        <ul aria-label="Research interests" class="mt-5 flex flex-wrap gap-2 short:mt-4">
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Green criminology</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Waste crime</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Investigative methods</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Environmental crime</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Regimes of permission</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Opportunity structures</li>
-          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Nodal governance</li>
+        <!-- Research interests: add, remove or reword the <li> lines (the · separators are automatic) -->
+        <ul aria-label="Research interests" class="mt-5 flex flex-wrap items-baseline gap-y-1 text-sm leading-relaxed text-muted short:mt-4">
+          <li aria-hidden="true" class="mr-3 font-mono text-xs uppercase tracking-[0.14em] text-accent">Interests</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Green criminology</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Waste crime</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Investigative methods</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Environmental crime</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Regimes of permission</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Opportunity structures</li>
+          <li class="after:mx-1.5 after:content-['·'] last:after:content-none">Nodal governance</li>
         </ul>
 
         <div class="mt-8 flex flex-wrap gap-3 short:mt-5">
@@ -131,45 +132,19 @@
         <picture>
           <source srcset="assets/portrait.webp" type="image/webp">
           <img src="assets/portrait.jpg" alt="Danny Pye" width="640" height="800"
-               class="relative aspect-[4/5] w-full rounded-2xl object-cover shadow-xl shadow-slate-900/10">
+               class="relative aspect-[4/5] w-full rounded-2xl object-cover">
         </picture>
       </figure>
     </section>
 
-    <!-- ===== Contact ===== -->
-    <section aria-labelledby="contact" class="border-t border-line pt-8 pb-6 short:pt-6 short:pb-4 shorter:pt-5">
-      <h2 id="contact" class="font-mono text-xs uppercase tracking-[0.14em] text-muted">Contact</h2>
-      <p class="mt-3 font-medium short:mt-2">
-        Open to collaboration and consultancy on waste and environmental crime.
-      </p>
-
-      <dl class="mt-5 grid gap-6 sm:grid-cols-[auto_auto_auto] sm:justify-between sm:gap-x-10 short:mt-4">
-        <div>
-          <dt class="text-sm text-muted">University email</dt>
-          <dd class="mt-1 font-medium">
-            <a href="mailto:pye-d@ulster.ac.uk" class="underline decoration-line underline-offset-4 hover:decoration-accent">pye-d@ulster.ac.uk</a>
-          </dd>
-        </div>
-        <div>
-          <dt class="text-sm text-muted">School</dt>
-          <dd class="mt-1 font-medium leading-snug">
-            School of Applied Social and Policy Sciences<br>
-            <span class="font-normal text-muted">Ulster University, Belfast</span>
-          </dd>
-        </div>
-        <div>
-          <dt class="text-sm text-muted">Elsewhere</dt>
-          <dd class="mt-1 flex flex-wrap gap-x-5 gap-y-1 font-medium">
-            <a href="https://pure.ulster.ac.uk/en/persons/daniel-pye/" class="underline decoration-line underline-offset-4 hover:decoration-accent">Ulster profile</a>
-            <a href="https://orcid.org/0009-0008-0359-2669" class="underline decoration-line underline-offset-4 hover:decoration-accent">ORCID</a>
-            <a href="https://www.linkedin.com/in/daniel-pye/" class="underline decoration-line underline-offset-4 hover:decoration-accent">LinkedIn</a>
-          </dd>
-        </div>
-      </dl>
-    </section>
-
-    <footer class="pb-8 text-sm text-muted short:pb-6 shorter:pb-4">
-      © 2026 Danny Pye
+    <!-- ===== Profiles and footer: one slim row ===== -->
+    <footer class="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-line py-6 text-sm short:py-4">
+      <nav aria-label="Profiles" class="flex flex-wrap gap-x-5 gap-y-1 font-medium">
+        <a href="https://pure.ulster.ac.uk/en/persons/daniel-pye/" class="underline decoration-line underline-offset-4 hover:decoration-accent">Ulster profile</a>
+        <a href="https://orcid.org/0009-0008-0359-2669" class="underline decoration-line underline-offset-4 hover:decoration-accent">ORCID</a>
+        <a href="https://www.linkedin.com/in/daniel-pye/" class="underline decoration-line underline-offset-4 hover:decoration-accent">LinkedIn</a>
+      </nav>
+      <p class="text-muted">© 2026 Danny Pye</p>
     </footer>
 
   </main>
