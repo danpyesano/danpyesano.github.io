@@ -6,7 +6,50 @@
   <title>Danny Pye · PhD Researcher</title>
   <meta name="description" content="Danny Pye, PhD researcher in Social Policy at Ulster University, researching illegal landfilling in Northern Ireland.">
 
+  <link rel="canonical" href="https://danny-pye.com/">
+
+  <!-- Link previews: what appears when the site is shared on LinkedIn, WhatsApp, email, Bluesky, X -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danny-pye.com/">
+  <meta property="og:site_name" content="Danny Pye">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Danny Pye · PhD Researcher">
+  <meta property="og:description" content="Danny Pye, PhD researcher in Social Policy at Ulster University, researching illegal landfilling in Northern Ireland.">
+  <meta property="og:image" content="https://danny-pye.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Danny Pye, PhD Researcher, Social Policy, Ulster University">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Search engines: who this page is about and which profiles are his. Data only, not a script that runs. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Danny Pye",
+    "alternateName": "Daniel Pye",
+    "url": "https://danny-pye.com/",
+    "image": "https://danny-pye.com/assets/portrait.jpg",
+    "jobTitle": "PhD Researcher",
+    "email": "mailto:pye-d@ulster.ac.uk",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Ulster University",
+      "department": { "@type": "Organization", "name": "School of Applied Social and Policy Sciences" }
+    },
+    "knowsAbout": ["Green criminology", "State-corporate crime", "Waste crime", "Environmental regulation", "Investigative methods"],
+    "sameAs": [
+      "https://orcid.org/0009-0008-0359-2669",
+      "https://pure.ulster.ac.uk/en/persons/daniel-pye/",
+      "https://www.linkedin.com/in/daniel-pye/"
+    ]
+  }
+  </script>
+
+  <!-- Browser-tab and home-screen icons -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,26 +64,35 @@
   <main class="mx-auto flex min-h-dvh max-w-5xl flex-col px-6 sm:px-10">
 
     <!-- ===== Intro ===== -->
-    <section class="grid flex-1 items-center gap-10 py-12 md:grid-cols-[1fr_auto] md:gap-20 md:py-16 short:md:py-8">
+    <section class="grid flex-1 items-center gap-10 py-12 md:grid-cols-[1fr_auto] md:gap-20 md:py-14 short:md:py-8 shorter:md:py-4">
 
       <!-- Text -->
-      <div class="order-2 max-w-xl md:order-1">
+      <div class="order-2 max-w-2xl md:order-1">
         <p class="font-mono text-xs uppercase tracking-[0.14em] text-accent">
           PhD Researcher · Social Policy · Ulster University
         </p>
 
-        <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+        <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl short:mt-3 short:sm:text-[2.75rem]">
           Danny Pye
         </h1>
 
-        <p class="mt-6 text-lg leading-relaxed text-muted">
+        <p class="mt-6 text-lg leading-relaxed text-muted short:mt-4 short:text-base shorter:leading-normal">
           My PhD examines how illegal landfilling in Northern Ireland operates and how it
           can be disrupted. I use investigative ethnography, combining interviews with OSINT,
           records research, data analysis and GIS. It draws on my
           background as a journalist investigating environmental and state-corporate crime.
         </p>
 
-        <div class="mt-8 flex flex-wrap gap-3">
+        <!-- Research interests: add, remove or reword the <li> lines -->
+        <ul aria-label="Research interests" class="mt-5 flex flex-wrap gap-2 short:mt-4">
+          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Green criminology</li>
+          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">State-corporate crime</li>
+          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Waste crime</li>
+          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Environmental regulation</li>
+          <li class="rounded-full border border-line bg-slate-50 px-3 py-1 text-xs font-medium text-muted">Investigative methods</li>
+        </ul>
+
+        <div class="mt-8 flex flex-wrap gap-3 short:mt-5">
           <!-- CV button: to update the CV, upload a new cv.pdf to assets/ (same name). -->
           <a href="assets/cv.pdf" download="Danny-Pye-CV.pdf"
              class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
@@ -67,8 +119,11 @@
     </section>
 
     <!-- ===== Contact ===== -->
-    <section aria-labelledby="contact" class="border-t border-line pt-8 pb-6 short:pt-6 short:pb-4">
+    <section aria-labelledby="contact" class="border-t border-line pt-8 pb-6 short:pt-6 short:pb-4 shorter:pt-5">
       <h2 id="contact" class="font-mono text-xs uppercase tracking-[0.14em] text-muted">Contact</h2>
+      <p class="mt-3 font-medium short:mt-2">
+        Open to collaboration, expert commentary and consultancy on waste and environmental crime.
+      </p>
 
       <dl class="mt-5 grid gap-6 sm:grid-cols-[auto_auto_auto] sm:justify-between sm:gap-x-10 short:mt-4">
         <div>
@@ -95,7 +150,7 @@
       </dl>
     </section>
 
-    <footer class="pb-8 text-sm text-muted short:pb-6">
+    <footer class="pb-8 text-sm text-muted short:pb-6 shorter:pb-4">
       © 2026 Danny Pye
     </footer>
 
